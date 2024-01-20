@@ -32,6 +32,11 @@ export default function _layout() {
                 name='Exercises'
                 options={{presentation:'fullScreenModal'}}
             />
+             <Stack.Screen
+                name='ExerciseDetails'
+                options={{presentation:'modal'}}
+            />
+            
             {/* Other Stack.Screen components go here */}
         </Stack.Navigator>
     );

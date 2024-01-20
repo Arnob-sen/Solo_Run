@@ -10,6 +10,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from './app/Home';
 import WelcomeScreen from './app/Welcome';
 import Exercises from './app/Exercises';
+import ExerciseDetails from './app/ExerciseDetails';
 const Stack = createStackNavigator();
 export default function App() {
   
@@ -19,6 +20,7 @@ export default function App() {
       <Stack.Screen name="Welcome" component={WelcomeScreen} />
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Exercises" component={Exercises}/>
+      <Stack.Screen name="ExerciseDetails" component={ExerciseDetails}/>
     </Stack.Navigator>
   </NavigationContainer>
 );
