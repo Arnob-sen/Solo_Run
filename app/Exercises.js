@@ -146,10 +146,10 @@ export default function Exercises() {
     const route = useRoute();
     const { item } = route.params;
     console.log('get data', item);
-    const [exercise, setExercise] = useState(demo);
+    const [exercise, setExercise] = useState([]);
     
     useEffect(() => {
-        // if(item) getExercises(item.name);
+        if(item) getExercises(item.name);
     }, [item]);
 
     useEffect(() => {
