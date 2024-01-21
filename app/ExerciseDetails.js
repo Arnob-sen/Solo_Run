@@ -25,7 +25,7 @@ export default function ExerciseDetails() {
         </View>
 
         <TouchableOpacity 
-            onPress={()=>navigation.navigate('Home')}
+            onPress={()=>navigation.goBack()}
             className="mx-2 absolute rounded-full mt-2 right-0"
         >
             <Anticons name="closecircle" size={hp(4.5)} color="#f43f5e" />

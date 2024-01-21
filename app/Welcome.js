@@ -4,6 +4,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import Animated , { FadeIn, FadeInDown, FadeOut }  from 'react-native-reanimated';
 import { useRouter } from 'expo-router';
+
 function WelcomeScreen({navigation}) {
     return(
     <View className='flex-1 flex justify-end' >
@@ -20,7 +21,7 @@ function WelcomeScreen({navigation}) {
 
         <Animated.View entering={FadeInDown.delay(500).springify()} className='flex items-center '>
           <Text className='text-white font-bold -tracking-wide' style={{fontSize:hp(5)}}>
-            Best <Text className='text-rose-500'> Worktouts</Text>
+            Best <Text className='text-rose-500'> Workout</Text>
           </Text>
           <Text className='text-white font-bold -tracking-wide' style={{fontSize:hp(5)}}>
             For you

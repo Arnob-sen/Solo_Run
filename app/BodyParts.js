@@ -10,7 +10,7 @@ import ExerciseList from './ExerciseList';
 // import { useRouter } from 'expo-router';
 export default function BodyParts() {
   return (
- <View className='mx-3'>
+ <View className='mx-3 flex-auto pb-5'>
    <Text style={{fontSize:hp(3)}} className='font-semibold text-neutral-700' >Exercises</Text>
  <FlatList
  data={bodyParts}
@@ -59,7 +59,7 @@ export default function BodyParts() {
 const BodyPartCard=({item,index})=>{
   const navigation=useNavigation()
   return(
-      <View>
+      <View className='flex'>
           <TouchableOpacity style={{width:wp(44),height:wp(52)}}
            onPress={() => navigation.navigate('Exercises',{item})}
           // onPress={()=>router.push({pathname:'/Exercises',params:item})}
